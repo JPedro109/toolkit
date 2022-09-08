@@ -2,12 +2,16 @@
 	"name": "framework",
 	"version": "1.0.0",
 	"description": "Dependency Framework",
-	"main": "index.ts",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"repository": "https://github.com/JPedro109/framework.git",
 	"author": "João Pedro",
 	"scripts": {
 		"build": "tsc -d"
 	},
+	"files": [
+		"dist"
+	],
 	"license": "MIT",
 	"devDependencies": {
 		"@types/jsonwebtoken": "^8.5.9",
