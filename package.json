@@ -5,6 +5,9 @@
 	"main": "index.ts",
 	"repository": "https://github.com/JPedro109/framework.git",
 	"author": "João Pedro",
+	"scripts": {
+		"build": "tsc -d"
+	},
 	"license": "MIT",
 	"devDependencies": {
 		"@types/jsonwebtoken": "^8.5.9",
