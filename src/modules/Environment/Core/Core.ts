@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { ICore } from "./ICore";
 
 export class Core implements ICore {
