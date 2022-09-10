@@ -5,6 +5,7 @@ import { cache } from "../modules/Cache";
 import { password } from "../modules/Password";
 import { validation } from "../modules/Validation";
 import { error } from "../modules/Error";
+import { generation } from "../modules/Generation";
 
 export class Fk {
 	static jsonWebToken = jsonWebToken;
@@ -14,4 +15,5 @@ export class Fk {
 	static password = password;
 	static validation = validation;
 	static error = error;
+	static generation = generation;
 }
