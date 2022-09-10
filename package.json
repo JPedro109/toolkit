@@ -4,7 +4,7 @@
 	"description": "Development Toolkit",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"repository": "https://github.com/JPedro109/framework.git",
+	"repository": "https://github.com/JPedro109/toolkit-node.git",
 	"author": "João Pedro",
 	"scripts": {
 		"build": "tsc -d"
