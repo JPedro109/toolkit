@@ -1,15 +1,15 @@
 import { ICore } from "./ICore";
-import crypto from "crypto";
-import uuid from "uuid";
+import { v4 } from "uuid";
+import { randomBytes } from "crypto";
 
 export class Core implements ICore {
 
 	id(): string {
-		return uuid.v4();
+		return v4();
 	}
 
 	token(): string {
-		return crypto.randomBytes(15).toString("hex");
+		return randomBytes(15).toString("hex");
 	}
 
 	tokenExpirationTime(timeInMinutes: number): number {
