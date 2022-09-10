@@ -3,6 +3,7 @@ import { environment } from "../modules/Environment";
 import { email } from "../modules/Email";
 import { cache } from "../modules/Cache";
 import { password } from "../modules/Password";
+import { validation } from "../modules/Validation";
 
 export class Fk {
 	static jsonWebToken = jsonWebToken;
@@ -10,4 +11,5 @@ export class Fk {
 	static email = email;
 	static cache = cache;
 	static password = password;
+	static validation = validation;
 }
