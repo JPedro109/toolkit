@@ -4,6 +4,7 @@ import { email } from "../modules/Email";
 import { cache } from "../modules/Cache";
 import { password } from "../modules/Password";
 import { validation } from "../modules/Validation";
+import { error } from "../modules/Error";
 
 export class Fk {
 	static jsonWebToken = jsonWebToken;
@@ -12,4 +13,5 @@ export class Fk {
 	static cache = cache;
 	static password = password;
 	static validation = validation;
+	static error = error;
 }
