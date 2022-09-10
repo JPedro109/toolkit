@@ -6,8 +6,8 @@ export class Core implements ICore {
 
 	constructor(private adapter: IAdapter) { }
 
-	createToken(payload: object, secretKey: string, expiryTime: number): string {
-		return this.adapter.createToken(payload, secretKey, expiryTime);
+	createToken(payload: object, secretKey: string, expiryTimeInSeconds: number): string {
+		return this.adapter.createToken(payload, secretKey, expiryTimeInSeconds);
 	}
 
 	tokenVerification(token: string, secretKey: string): JsonWebTokenModel {

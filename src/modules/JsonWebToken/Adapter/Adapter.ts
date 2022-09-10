@@ -4,8 +4,8 @@ import jwt from "jsonwebtoken";
 
 export class Adapter implements IAdapter {
 
-	createToken(payload: object, secretKey: string, expiryTime: number): string {
-		return jwt.sign(payload, secretKey, { expiresIn: expiryTime });
+	createToken(payload: object, secretKey: string, expiryTimeInSeconds: number): string {
+		return jwt.sign(payload, secretKey, { expiresIn: expiryTimeInSeconds });
 	}
 
 	tokenVerification(token: string, secretKey: string): JsonWebTokenModel {
