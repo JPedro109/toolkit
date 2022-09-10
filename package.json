@@ -1,7 +1,7 @@
 {
-	"name": "framework",
+	"name": "@jpdeveloper/toolkit",
 	"version": "1.0.0",
-	"description": "Dependency Framework",
+	"description": "Development Toolkit",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"repository": "https://github.com/JPedro109/framework.git",
