@@ -1,5 +1,5 @@
-import { Fk } from "./toolkit";
+import { Toolkit } from "./toolkit";
 
-const fk = Fk;
+const toolkit = Toolkit;
 
-export default fk;
+export default toolkit;
