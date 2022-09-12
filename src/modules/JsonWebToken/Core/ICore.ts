@@ -1,3 +1,6 @@
-import { IAdapter } from "../Adapter/IAdapter";
+import { JsonWebTokenModel } from "../Model/JsonWebTokenModel";
 
-export type ICore = IAdapter;
+export interface ICore {
+	createToken(payload: object, secretKey: string, expiryTimeInSeconds: number): string;
+	tokenVerification(token: string, secretKey: string): JsonWebTokenModel;
+}
