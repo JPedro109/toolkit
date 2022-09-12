@@ -1,7 +1,7 @@
 {
-	"name": "@jpdeveloper/toolkit",
+	"name": "@jpdeveloper/devtool",
 	"version": "1.0.0",
-	"description": "Development Toolkit",
+	"description": "Devtool",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"repository": "https://github.com/JPedro109/toolkit-node.git",
