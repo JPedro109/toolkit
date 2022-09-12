@@ -4,7 +4,7 @@
 	"description": "Devtool",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"repository": "https://github.com/JPedro109/toolkit-node.git",
+	"repository": "https://github.com/JPedro109/devtool-node.git",
 	"author": "João Pedro",
 	"scripts": {
 		"build": "tsc -d"
