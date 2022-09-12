@@ -1,14 +1,13 @@
-import { IAdapter } from "../Adapter/IAdapter";
+import { hashSync, compareSync } from "bcryptjs";
 import { ICore } from "./ICore";
 
 export class Core implements ICore {
 
-	constructor(private adapter: IAdapter) { }
-
 	encryptPassword(password: string): string {
-		return this.adapter.encryptPassword(password);
+		return hashSync(password, 10);
 	}
+
 	comparePasswordEncrypt(password: string, userPassword: string): boolean {
-		return this.adapter.comparePasswordEncrypt(password, userPassword);
+		return compareSync(password, userPassword);
 	}
 }
