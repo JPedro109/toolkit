@@ -1,16 +1,18 @@
-import { IAdapter } from "../Adapter/IAdapter";
+import jwt from "jsonwebtoken";
 import { JsonWebTokenModel } from "../Model/JsonWebTokenModel";
 import { ICore } from "./ICore";
 
 export class Core implements ICore {
 
-	constructor(private adapter: IAdapter) { }
-
-	createToken(payload: object, secretKey: string, expiryTime: number): string {
-		return this.adapter.createToken(payload, secretKey, expiryTime);
+	createToken(payload: object, secretKey: string, expiryTimeInSeconds: number): string {
+		return jwt.sign(payload, secretKey, { expiresIn: expiryTimeInSeconds });
 	}
 
 	tokenVerification(token: string, secretKey: string): JsonWebTokenModel {
-		return this.adapter.tokenVerification(token, secretKey);
+		const decode = jwt.verify(token, secretKey);
+
+		if (typeof decode === "string") throw new Error("Incorrect type return");
+
+		return decode;
 	}
 }

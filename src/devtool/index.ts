@@ -7,7 +7,7 @@ import { validation } from "../modules/Validation";
 import { error } from "../modules/Error";
 import { generation } from "../modules/Generation";
 
-export class Fk {
+export class Devtool {
 	static jsonWebToken = jsonWebToken;
 	static environment = environment;
 	static email = email;

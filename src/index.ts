@@ -1,5 +1,5 @@
-import { Fk } from "./framework";
+import { Devtool } from "./devtool";
 
-const fk = Fk;
+const devtool = Devtool;
 
-export default fk;
+export default devtool;
