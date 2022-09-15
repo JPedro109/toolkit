@@ -1,5 +1,5 @@
-import { Toolkit } from "./toolkit";
+import { Devtool } from "./devtool";
 
-const toolkit = Toolkit;
+const devtool = Devtool;
 
-export default toolkit;
+export default devtool;
