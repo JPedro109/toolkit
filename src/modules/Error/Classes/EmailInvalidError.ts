@@ -1,10 +1,10 @@
 export class EmailInvalidError extends Error {
-	code: number;
+	statusCode: number;
 
 	constructor() {
 		super();
 		this.name = "EmailInvalidError";
 		this.message = "Coloque um e-mail válido";
-		this.code = 400;
+		this.statusCode = 400;
 	}
 }
