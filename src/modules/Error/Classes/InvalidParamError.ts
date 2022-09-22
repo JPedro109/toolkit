@@ -1,9 +1,9 @@
 export class InvalidParamError extends Error {
-	code: number;
+	statusCode: number;
 
 	constructor(paramName: string) {
 		super(paramName);
 		this.name = "InvalidParamError";
-		this.code = 400;
+		this.statusCode = 400;
 	}
 }

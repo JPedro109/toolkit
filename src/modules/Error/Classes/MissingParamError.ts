@@ -1,9 +1,9 @@
 export class MissingParamError extends Error {
-	code: number;
+	statusCode: number;
 
 	constructor(paramName: string) {
 		super(paramName);
 		this.name = "MissingParamError";
-		this.code = 400;
+		this.statusCode = 400;
 	}
 }

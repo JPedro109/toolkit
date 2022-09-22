@@ -1,9 +1,9 @@
 export class ForbiddenError extends Error {
-	code: number;
+	statusCode: number;
 
 	constructor(paramName: string) {
 		super(paramName);
 		this.name = "ForbiddenError";
-		this.code = 403;
+		this.statusCode = 403;
 	}
 }
