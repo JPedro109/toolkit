@@ -1,10 +1,10 @@
 {
 	"name": "@jpmnsdeveloper/toolkit",
-	"version": "1.0.1",
-	"description": "Devtool",
+	"version": "1.0.2",
+	"description": "Toolkit",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"repository": "https://github.com/JPedro109/devtool-node.git",
+	"repository": "https://github.com/JPedro109/toolkit-node.git",
 	"author": "João Pedro",
 	"scripts": {
 		"build": "tsc -d"
