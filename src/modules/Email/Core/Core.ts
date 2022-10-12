@@ -9,9 +9,9 @@ export class Core implements ICore {
 		if (!this.adapter) throw new Error("The email module inialized environment variable not set");
 	}
 
-	async sendMail(from: string, to: string, subject: string, template: string, context?: object): Promise<void> {
+	async sendMail(to: string, subject: string, template: string, context?: object): Promise<void> {
 		this.moduleInialized();
 
-		await this.adapter.sendMail(from, to, subject, template, context);
+		await this.adapter.sendMail(to, subject, template, context);
 	}
 }
