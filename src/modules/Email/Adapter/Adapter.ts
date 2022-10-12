@@ -39,9 +39,9 @@ export class Adapter implements IAdapter {
 
 	}
 
-	async sendMail(from: string, to: string, subject: string, template: string, context?: object) {
+	async sendMail(to: string, subject: string, template: string, context?: object) {
 		const email = {
-			from,
+			from: this.email,
 			to,
 			subject,
 			template,
