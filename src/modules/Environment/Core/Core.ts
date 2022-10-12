@@ -10,7 +10,7 @@ export class Core implements ICore {
 	getRequiredValue(key: string): string {
 		const value = process.env[key];
 
-		if (!value) throw new Error("The value of the environment variable is null");
+		if (!value) throw new Error(`The value of the environment variable ${key} is null`);
 
 		return process.env[key];
 	}
