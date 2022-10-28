@@ -1,6 +1,16 @@
 # Toolkit
 
-Essa aplicação tem o objetivo de juntar e configurar as bibliotecas e classes mais utilizadas nos projetos dessa conta. São sete módulos que compõem esse tookit, para usar ele você deve importar toolkit, após isso digite:
+Para baixá-lo digite um dos seguintes comandos:
+
+```sh
+  yarn add @jpmnsdeveloper/toolkit
+```
+
+```sh
+  npm i @jpmnsdeveloper/toolkit
+```
+
+Esse pacote tem o objetivo de juntar e configurar as bibliotecas e classes mais utilizadas nos projetos dessa conta. São sete módulos que compõem esse toolkit, para usar ele você deve importar o toolkit, após isso digite:
 
 ```sh
   toolkit.
@@ -117,7 +127,7 @@ Para ver as informaçõe que os erros retornam acesse | https://github.com/JPedr
 - PROVIDER_PORT_EMAIL_MODULE | É a porta do servidor de envio de e-mail
 - PROVIDER_EMAIL_EMAIL_MODULE | É o e-mail que será usado como remente
 - PROVIDER_PASSWORD_EMAIL_MODULE | É a senha do e-mail que será usado como remente
-- PROVIDER_EMAILBODIESPATH_EMAIL_MODULE | É o local onde estão o corpos de email, o caminho dever partir da raiz do projeto
+- PROVIDER_EMAILBODIESPATH_EMAIL_MODULE | É o caminho local onde estão o corpos de email, o caminho deve partir da raiz do projeto
 
 ```sh
   sendMailsendMail(to: string, subject: string, template: string, context?: object): Promise<void> - Envia um e-mail
