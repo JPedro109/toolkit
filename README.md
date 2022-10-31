@@ -30,7 +30,7 @@ E a frente do ponto digite o nome de um dos seguintes módulos:
 
 ### Não necessita de variáveis de ambiente para ser utilizado
 
-Para ver as informaçõe que os erros retornam acesse | https://github.com/JPedro109/toolkit/tree/master/src/modules/Error/Classes
+Para ver as informações que os erros retornam acesse | https://github.com/JPedro109/toolkit/tree/master/src/modules/Error/Classes
 
 - EmailInvalidError | Excessão para e-mail inválido
 - PasswordInvalidError | Excessão para senha inválida
