@@ -4,6 +4,7 @@ import { MissingParamError } from "./Classes/MissingParamError";
 import { InvalidParamError } from "./Classes/InvalidParamError";
 import { EmailInvalidError } from "./Classes/EmailInvalidError";
 import { PasswordInvalidError } from "./Classes/PasswordInvalidError";
+import { NotFoundError } from "./Classes/NotFoundError";
 
 export const error = {
 	UnauthorizedError,
@@ -11,5 +12,6 @@ export const error = {
 	MissingParamError,
 	InvalidParamError,
 	EmailInvalidError,
-	PasswordInvalidError
+	PasswordInvalidError,
+	NotFoundError
 };
