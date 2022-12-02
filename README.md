@@ -36,7 +36,7 @@ Para ver as informações que os erros retornam acesse | https://github.com/JPed
 - PasswordInvalidError | Excessão para senha inválida
 - MissingParamError | Excessão para erros relacionados a falta de envio de parâmetros
 - UnauthorizedError | Excessão para falta de autorização
-- UnauthorizedError | Excessão para proibição de chamadas pelo servidor
+- NotFoundError | Excessão para objeto não encontrado
 
 ## Environment - Conjunto de funções relacionadas com o retorno de variáveis de ambiente
 
