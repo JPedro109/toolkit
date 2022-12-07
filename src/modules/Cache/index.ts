@@ -1,6 +1,6 @@
-import { Core } from "./Core/Core";
-import { Adapter } from "./Adapter/Adapter";
+import { ChacheCore } from "./Core/ChacheCore";
+import { NodeCacheAdapter } from "./Adapter/NodeCacheAdapter";
 
-const adapter = new Adapter();
+const adapter = new NodeCacheAdapter();
 
-export const cache = new Core(adapter);
+export const cache = new ChacheCore(adapter);

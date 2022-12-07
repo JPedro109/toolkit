@@ -1,7 +1,7 @@
 import NodeCache from "node-cache";
-import { IAdapter } from "./IAdapter";
+import { IAdapter } from "./Interfaces/IAdapter";
 
-export class Adapter implements IAdapter {
+export class NodeCacheAdapter implements IAdapter {
 
 	private cache: NodeCache;
 

@@ -1,7 +1,7 @@
-import { IAdapter } from "../Adapter/IAdapter";
-import { ICore } from "./ICore";
+import { IAdapter } from "../Adapter/Interfaces/IAdapter";
+import { IChacheCore } from "./IChacheCore";
 
-export class Core implements ICore {
+export class ChacheCore implements IChacheCore {
 
 	constructor(private adapter: IAdapter) { }
 
