@@ -1,7 +1,7 @@
 import { hashSync, compareSync } from "bcryptjs";
-import { ICore } from "./ICore";
+import { IPasswordCore } from "./IPasswordCore";
 
-export class Core implements ICore {
+export class PasswordCore implements IPasswordCore {
 
 	encryptPassword(password: string): string {
 		return hashSync(password, 10);
