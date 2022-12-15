@@ -1,3 +1,3 @@
-import { Core } from "./Core/Core";
+import { EnvironmentCore } from "./Core/EnvironmentCore";
 
-export const environment = new Core();
+export const environment = new EnvironmentCore();

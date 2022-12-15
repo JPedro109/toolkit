@@ -1,3 +1,3 @@
-import { Core } from "./Core/Core";
+import { ValidationCore } from "./Core/ValidationCore";
 
-export const validation = new Core();
+export const validation = new ValidationCore();

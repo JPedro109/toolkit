@@ -1,3 +1,3 @@
-import { Core } from "./Core/Core";
+import { GenerationCore } from "./Core/GenerationCore";
 
-export const generation = new Core();
+export const generation = new GenerationCore();

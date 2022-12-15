@@ -1,7 +1,7 @@
 import "dotenv/config";
-import { ICore } from "./ICore";
+import { IEnvironmentCore } from "./IEnvironmentCore";
 
-export class Core implements ICore {
+export class EnvironmentCore implements IEnvironmentCore {
 
 	getValue(key: string): string | undefined {
 		return process.env[key];

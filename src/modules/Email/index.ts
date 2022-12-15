@@ -1,8 +1,8 @@
 import { environment } from "../Environment";
-import { Adapter } from "./Adapter/Adapter";
-import { Core } from "./Core/Core";
+import { NodeMailerAdapter } from "./Adapter/NodeMailerAdapter";
+import { EmailCore } from "./Core/EmailCore";
 
-const adapter = environment.getValue("INITIALIZED_EMAIL_MODULE") ? new Adapter(
+const adapter = environment.getValue("INITIALIZED_EMAIL_MODULE") ? new NodeMailerAdapter(
 	environment.getRequiredValue("PROVIDER_HOST_EMAIL_MODULE"),
 	parseInt(environment.getRequiredValue("PROVIDER_PORT_EMAIL_MODULE")),
 	environment.getRequiredValue("PROVIDER_EMAIL_EMAIL_MODULE"),
@@ -11,4 +11,4 @@ const adapter = environment.getValue("INITIALIZED_EMAIL_MODULE") ? new Adapter(
 	Boolean(environment.getValue("PROVIDER_SSL_EMAIL_MODULE"))
 ) : null;
 
-export const email = new Core(adapter);
+export const email = new EmailCore(adapter);

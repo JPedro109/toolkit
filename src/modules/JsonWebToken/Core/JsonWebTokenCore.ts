@@ -2,9 +2,9 @@ import jwt from "jsonwebtoken";
 import { environment } from "../../Environment";
 import { UnauthorizedError } from "../../Error/Classes/UnauthorizedError";
 import { JsonWebTokenModel } from "../Model/JsonWebTokenModel";
-import { ICore } from "./ICore";
+import { IJsonWebTokenCore } from "./IJsonWebTokenCore";
 
-export class Core implements ICore {
+export class JsonWebTokenCore implements IJsonWebTokenCore {
 
 	createToken(payload: object, expiryTimeInSeconds: number): string {
 		return jwt.sign(payload, environment.getRequiredValue("JWT_SECRET_KEY"), { expiresIn: expiryTimeInSeconds });

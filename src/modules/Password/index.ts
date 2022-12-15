@@ -1,3 +1,3 @@
-import { Core } from "./Core/Core";
+import { PasswordCore } from "./Core/PasswordCore";
 
-export const password = new Core();
+export const password = new PasswordCore();

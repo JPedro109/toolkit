@@ -1,7 +1,7 @@
-import { IAdapter } from "../Adapter/IAdapter";
-import { ICore } from "./ICore";
+import { IAdapter } from "../Adapter/Interfaces/IAdapter";
+import { IEmailCore } from "./IEmailCore";
 
-export class Core implements ICore {
+export class EmailCore implements IEmailCore {
 
 	constructor(private adapter: IAdapter) { }
 

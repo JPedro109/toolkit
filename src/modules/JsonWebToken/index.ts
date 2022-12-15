@@ -1,3 +1,3 @@
-import { Core } from "./Core/Core";
+import { JsonWebTokenCore } from "./Core/JsonWebTokenCore";
 
-export const jsonWebToken = new Core();
+export const jsonWebToken = new JsonWebTokenCore();

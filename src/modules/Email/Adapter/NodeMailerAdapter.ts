@@ -1,9 +1,9 @@
-import { IAdapter } from "./IAdapter";
+import { IAdapter } from "./Interfaces/IAdapter";
 import path from "path";
 import nodemailer, { SentMessageInfo, Transporter } from "nodemailer";
 import hbs from "nodemailer-express-handlebars";
 
-export class Adapter implements IAdapter {
+export class NodeMailerAdapter implements IAdapter {
 
 	private mail: Transporter<SentMessageInfo>;
 	private email: string;

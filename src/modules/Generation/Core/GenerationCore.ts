@@ -1,8 +1,8 @@
-import { ICore } from "./ICore";
+import { IGenerationCore } from "./IGenerationCore";
 import { v4 } from "uuid";
 import { randomBytes } from "crypto";
 
-export class Core implements ICore {
+export class GenerationCore implements IGenerationCore {
 
 	id(): string {
 		return v4();
